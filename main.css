@@ -17,10 +17,10 @@ body {
 /* F O N T */
 
 body {
-	font-family: 'Courier-New', 'Courier', monotype;
+	font-family: "Arial", sans-serif;
     color: black;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 h1, h2, h3, p, span {
@@ -94,23 +94,23 @@ aside header {
 }
 
 .item_1 {
-	background-image: linear-gradient(to right, bisque, white);
+	background-color: bisque;
 }
 
 .item_2 {
-	background-image: linear-gradient(to right, darkseagreen, white);
+	background-color: darkseagreen;
 }
 
 .item_3 {
-	background-image: linear-gradient(to right, gainsboro, white);
+	background-color: gainsboro;
 }
 
 .item_4 {
-	background-image: linear-gradient(to right, mistyrose, white);
+	background-color: mistyrose;
 }
 
 .item_5 {
-	background-image: linear-gradient(to right, skyblue, white);
+	background-color: skyblue;
 }
 
 
@@ -205,27 +205,27 @@ article img {
 
 #article_1 {
 	border-right: 1px solid black;
-	background-image: linear-gradient(bisque, white);
+	background-color: bisque;
 }
 
 #article_2 {
 	border-right: 1px solid black;
-	background-image: linear-gradient(darkseagreen, white);
+	background-color: darkseagreen;
 }
 
 #article_3 {
 	border-right: 1px solid black;
-	background-image: linear-gradient(gainsboro, white);
+	background-color: gainsboro;
 }
 
 #article_4 {
 	border-right: 1px solid black;
-	background-image: linear-gradient(mistyrose, white);
+	background-color: mistyrose;
 }
 
 #article_5 {
 	border-right: none;
-	background-image: linear-gradient(skyblue, white);
+	background-color: skyblue;
 }
 
 article h1 {
@@ -274,23 +274,23 @@ article p {
 }
 
 #page_1 {
-	background-image: linear-gradient(bisque, white);
+	background-color: bisque;
 }
 
 #page_2 {
-	background-image: linear-gradient(darkseagreen, white);
+	background-color: darkseagreen;
 }
 
 #page_3 {
-	background-image: linear-gradient(gainsboro, white);
+	background-color: gainsboro;
 }
 
 #page_4 {
-	background-image: linear-gradient(mistyrose, white);
+	background-color: mistyrose;
 }
 
 #page_5 {
-	background-image: linear-gradient(skyblue, white);
+	background-color: skyblue;
 }
 
 #column_L {
