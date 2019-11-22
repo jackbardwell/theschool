@@ -144,6 +144,57 @@ header p span {
 	margin:0;
 }
 
+
+.label_header {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	float: left;
+	padding: 0px;
+	margin: 0;
+	cursor: pointer;
+	z-index:3;
+	mix-blend-mode: multiply;
+}
+
+.label_header p {
+	position: relative;
+	box-sizing: border-box;
+	text-align: left;
+	width: 100%;
+	height: 150px;
+	float: left;
+	top: 0px;
+	margin: 0;
+	padding: 0;
+	z-index: 3;
+}
+
+#close_header {
+	position: relative;
+	box-sizing: border-box;
+	background-color: white;
+	height: 45px;
+	top: 0px;
+	width: 100%;
+	margin: 0;
+	padding:14px;
+	border-bottom: 1px solid black;
+	z-index: 20;
+}
+
+#close_header p {
+	position: relative;
+	box-sizing: border-box;
+	float: left;
+	text-align: left;
+	top: 0px;
+	width: 100%;
+	padding:0;
+	margin:0;
+	z-index: 3;
+}
+
 /* M A I N */
 
 main {
@@ -257,7 +308,120 @@ article p {
 	float: right;
 }
 
+/* C L O C K */
+
+#dragdiv {
+  position: absolute;
+  z-index: 15;
+  background-color: none;
+  border: 0px solid #d3d3d3;
+  text-align: center;
+  border-radius: 25px;
+  cursor: move;
+
+}
+
+.clock {
+  border-radius: 50%;
+  background: #fff url(img/ios_clock.svg) no-repeat center;
+  background-size: 90%;
+  height: 21em;
+  width: 25%%;
+  box-shadow: 10px 10px 8px #888888;
+  padding-bottom: 31%;
+  position: absolute;
+  z-index: 15
+
+ 
+}
+
+.clock.simple:after {
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  position: relative;
+  left: 25%;
+  top: 25%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 25%;
+  z-index: 15;
+}
+
+.minutes-container, .hours-container, .seconds-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hours {
+  background: #000;
+  height: 20%;
+  left: 48.75%;
+  position: absolute;
+  top: 30%;
+  transform-origin: 50% 100%;
+  width: 1%;
+}
+
+.minutes {
+  background: #000;
+  height: 40%;
+  left: 49%;
+  position: absolute;
+  top: 10%;
+  transform-origin: 50% 100%;
+  width: 1.5%;
+}
+
+.seconds {
+  background: #000;
+  height: 45%;
+  left: 49.5%;
+  position: absolute;
+  top: 14%;
+  transform-origin: 50% 80%;
+  width: 0.5%;
+  z-index: 8;
+}
+
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.hours-container {
+  animation: rotate 43200s infinite linear;
+}
+.minutes-container {
+  transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
+}
+.seconds-container {
+  transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
+}
+
+.center {
+    height: 350px;
+    width: 350px;
+    background: black;
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+}
+
+
+
+
+
 /* P A G E S */
+
 
 #page_1, #page_2, #page_3, #page_4, #page_5 {
 	position: absolute;
@@ -271,6 +435,24 @@ article p {
 	background: white;
 	display: none;
 	border-bottom: 1px solid black;
+}
+
+#page_header{
+	position: absolute;
+	z-index: 10;
+	margin: 25;
+	padding: 0;
+	left: 0px;
+	top: 0px;
+	right: 0;
+	bottom: -1px;
+	background: white;
+	display: none;
+	border-bottom: 1px solid black;
+}
+
+#page_header {
+	background-color: white;
 }
 
 #page_1 {
@@ -322,6 +504,7 @@ article p {
 	box-sizing: border-box;
 	padding:14px 14px 0 14px;
 	width:100%;
+
 }
 
 /* L A B E L */
